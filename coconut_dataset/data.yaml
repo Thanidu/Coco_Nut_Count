@@ -1,0 +1,13 @@
+train: C:\Users\Thanidu\Desktop\Coco_Nut_Count\coconut_dataset\train\images
+val: C:\Users\Thanidu\Desktop\Coco_Nut_Count\coconut_dataset\valid\images
+test: C:\Users\Thanidu\Desktop\Coco_Nut_Count\coconut_dataset\test\images
+
+nc: 1
+names: ['coconut']
+
+roboflow:
+  workspace: object-detection-b4zfj
+  project: coconut-count
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/object-detection-b4zfj/coconut-count/dataset/2

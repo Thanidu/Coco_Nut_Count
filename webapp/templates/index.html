@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coconut Counter</title>
+</head>
+<body>
+    <h1>Upload an Image to Count Coconuts</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <input type="submit" value="Count Coconuts">
+    </form>
+    {% if count is defined %}
+        <h2>Number of Coconuts: {{ count }}</h2>
+        <img src="{{ image }}" alt="Result" style="max-width: 500px;">
+    {% endif %}
+</body>
+</html>
